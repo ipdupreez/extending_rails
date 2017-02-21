@@ -15,3 +15,29 @@
 
 # Ignore Byebug command history file.
 .byebug_history
+
+.idea
+.\idea
+/.idea
+dump.rdb
+/dump.rdb
+\dump.rdb
+tmp
+/tmp
+/log
+log
+public/dog_avatar/
+public/gallery
+db/.DS_Store
+db/migrate/.DS_Store
+.DS_Store
+public/invoices/
+public/invoices/
+*.rdb
+/pgdata
+pgdata
+pgdata/*
+/pgdata/*
+.bundle
+.\bundle
+/bundle
