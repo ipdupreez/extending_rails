@@ -41,19 +41,19 @@ class InvoicePresenter < BasePresenter
   end
 
   def is_approved
-    approved ? 'Yes' : 'No'
+    yes_no(approved)
   end
 
   def is_sent
-    invoice.sent ? 'Yes' : 'No'
+    yes_no(invoice.sent)
   end
 
   def is_void
-    void ? 'Yes' : 'No'
+    yes_no(void)
   end
 
   def is_paid
-    invoice.paid ? 'Yes' : 'No'
+    yes_no(invoice.paid)
   end
 
 
@@ -106,5 +106,9 @@ class InvoicePresenter < BasePresenter
 
   def total_equals_outstanding
     invoice.total == invoice.outstanding
+  end
+
+  def yes_no(var)
+    var ? 'Yes' : 'No'
   end
 end
